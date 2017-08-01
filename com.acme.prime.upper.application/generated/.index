@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1501604954034" name="com.acme.prime.upper.application" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.acme.prime.upper.application"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201708011624"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="662e6d84dc01af540f7df8bf854b2b4c2a0e9ecf4b31b074d73ba476e999e069"/>
+      <attribute name="url" value="generated/com.acme.prime.upper.application.jar"/>
+      <attribute name="size" type="Long" value="10924"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.acme.prime.upper.application"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201708011624"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.acme.prime.upper.application"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201708011624"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="osgi.enroute.rest.api.REST"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="osgi.enroute.rest.api.REST"/>
+      <directive name="uses" value="osgi.enroute.rest.api"/>
+    </capability>
+    <capability namespace="bndtools.workspace">
+      <attribute name="bndtools.workspace" value="file:/home/raja/Projects/OSGi/eclipse/com.acme.prime"/>
+      <attribute name="project.path" value="/com.acme.prime.upper.application"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=osgi.enroute.rest.api)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.enroute.webresource">
+      <attribute name="resource" type="List&lt;String&gt;" value="angular.js,angular-resource.js,angular-route.js"/>
+      <attribute name="priority" type="Long" value="1000"/>
+      <directive name="filter" value="(&amp;(osgi.enroute.webresource=/google/angular)(&amp;(version&gt;=1.5.7)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.enroute.webresource">
+      <attribute name="resource" type="List&lt;String&gt;" value="css/bootstrap.css"/>
+      <attribute name="priority" type="Long" value="1000"/>
+      <directive name="filter" value="(&amp;(osgi.enroute.webresource=/twitter/bootstrap)(&amp;(version&gt;=3.3.5)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <attribute name="configuration_loc" value="configuration/configuration.json"/>
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.enroute.configurer)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.enroute.webserver)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+</repository>
