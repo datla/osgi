@@ -16,6 +16,7 @@ import osgi.enroute.webserver.capabilities.RequireWebServerExtender;
 public class Test implements REST {
 
 	public String getUpper(String string) {
+		System.out.println("Testing git checkin");
 		return string.toLowerCase();
 	}
 

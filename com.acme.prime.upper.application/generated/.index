@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1501604954034" name="com.acme.prime.upper.application" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1502569084874" name="com.acme.prime.upper.application" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="com.acme.prime.upper.application"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.0.0.201708011624"/>
+      <attribute name="version" type="Version" value="1.0.0.201708122018"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="662e6d84dc01af540f7df8bf854b2b4c2a0e9ecf4b31b074d73ba476e999e069"/>
+      <attribute name="osgi.content" value="1f5486af891e9f1ab1b77dbadb17bb68320c584b0c7be63f37dcd13bceb7306f"/>
       <attribute name="url" value="generated/com.acme.prime.upper.application.jar"/>
-      <attribute name="size" type="Long" value="10924"/>
+      <attribute name="size" type="Long" value="11037"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="com.acme.prime.upper.application"/>
-      <attribute name="bundle-version" type="Version" value="1.0.0.201708011624"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201708122018"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="com.acme.prime.upper.application"/>
-      <attribute name="bundle-version" type="Version" value="1.0.0.201708011624"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201708122018"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" type="List&lt;String&gt;" value="osgi.enroute.rest.api.REST"/>
@@ -28,7 +28,7 @@
       <directive name="uses" value="osgi.enroute.rest.api"/>
     </capability>
     <capability namespace="bndtools.workspace">
-      <attribute name="bndtools.workspace" value="file:/home/raja/Projects/OSGi/eclipse/com.acme.prime"/>
+      <attribute name="bndtools.workspace" value="file:/home/raja/Projects/lportal7/development/eclipse"/>
       <attribute name="project.path" value="/com.acme.prime.upper.application"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
